@@ -16,6 +16,7 @@ void setGrading(struct results *p) {
   } else {
     (*p).grade = 'D';
   }
+  
 }
 
 int main() {
@@ -25,6 +26,7 @@ int main() {
   scanf("%s", result.name);
   printf("Enter test score: ");
   scanf("%d", &result.score);
+  
 
   setGrading(&result);
   printf("Name: %s, Score: %d, Grade: %c \n", result.name, result.score,
