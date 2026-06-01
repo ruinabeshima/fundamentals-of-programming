@@ -1,24 +1,22 @@
 #include <stdio.h>
 
-
-
 int main() {
-  char op[1];
+  char op;
   int a, b;
 
   scanf("%d", &a);
-  scanf("%s", op);
+  scanf(" %c", &op);
   scanf("%d", &b);
 
-  if (op[0] == '+') {
+  if (op == '+') {
     printf("%d + %d = %d \n", a, b, a + b);
-  } else if (op[0] == '-') {
+  } else if (op == '-') {
     printf("%d - %d = %d \n", a, b, a - b);
-  } else if (op[0] == '*') {
+  } else if (op == '*') {
     printf("%d * %d = %d \n", a, b, a * b);
-  } else if (op[0] == '/') {
+  } else if (op == '/') {
     printf("%d / %d = %d \n", a, b, a / b);
-  } else if (op[0] == '%') {
+  } else if (op == '%') {
     printf("%d mod %d = %d \n", a, b, a % b);
   }
 
